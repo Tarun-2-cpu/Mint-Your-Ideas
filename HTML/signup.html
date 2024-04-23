@@ -20,7 +20,7 @@
         <!-- Main css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-
+    
         <style>
             .top-logo img{
                 width:50px;
@@ -32,7 +32,11 @@
                 font:25px;
                 font-weight:600;
             }
+            .form-signin{
+                margin-top:10px;
+            }
         </style>
+
     </head>
 
     <body>
@@ -55,10 +59,8 @@
         <section class="position-relative">
             <div class="bg-video-wrapper">
                 <iframe width="560" height="300" src="https://www.youtube.com/embed/q-R1kpgBffA?playlist=q-R1kpgBffA&autoplay=1&loop=1&controls=0&showinfo=0&rel=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <!-- <iframe src="https://player.vimeo.com/video/502163294?background=1&autoplay=1&loop=1&byline=0&title=0"></iframe> -->
                 <!--Note: Vimeo Embed Background Video-->
-
+                
                 <!-- <iframe src="https://www.youtube.com/embed/yba7hPeTSjk?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe> -->
                 <!--Note: Youtube Embed Background Video-->
             </div>
@@ -77,43 +79,46 @@
                             <!-- End Logo -->
 
                             <!-- Start Content -->
-                            <div class="title-heading text-center my-auto">
+                            <div class="title-heading text-center my-auto mt-20">
                                 <div class="form-signin px-4 py-5 bg-white rounded-md shadow-sm">
                                     <form>
-                                        <h5 class="mb-4">Signin</h5>
+                                        <h5 class="mb-4">Register Your Account</h5>
+                            
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-floating mb-2">
-                                                    <input type="email" class="form-control" id="LoginEmail" placeholder="name@example.com" value="admin@demo.com">
-                                                    <label for="LoginEmail">Email Address:</label>
+                                                    <input type="text" class="form-control" id="RegisterName" placeholder="Harry">
+                                                    <label for="RegisterName">First Name</label>
                                                 </div>
-                                            </div>  
-
+                                            </div><!--end col-->
+    
+                                            <div class="col-lg-12">
+                                                <div class="form-floating mb-2">
+                                                    <input type="email" class="form-control" id="RegisterEmail" placeholder="name@example.com">
+                                                    <label for="RegisterEmail">Email Address</label>
+                                                </div>
+                                            </div><!--end col-->
+    
                                             <div class="col-lg-12">
                                                 <div class="form-floating mb-3">
-                                                    <input type="password" class="form-control" id="LoginPassword" placeholder="Password" value="admin@mintyourideas">
-                                                    <label for="LoginPassword">Password:</label>
-                                                </div>
-                                            </div>
-                                    
-                                            <div class="col-lg-12">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="mb-3">
-                                                        <div class="form-check align-items-center d-flex mb-0">
-                                                            <input class="form-check-input mt-0" type="checkbox" value="" id="RememberMe">
-                                                            <label class="form-check-label text-muted ms-2" for="RememberMe">Remember me</label>
-                                                        </div>
-                                                    </div>
-                                                    <small class="text-muted mb-0"><a href="reset-password.html" class="text-muted fw-semibold">Forgot password ?</a></small>
+                                                    <input type="password" class="form-control" id="RegisterPassword" placeholder="Password">
+                                                    <label for="RegisterPassword">Password</label>
                                                 </div>
                                             </div><!--end col-->
-                        
+                                        
                                             <div class="col-lg-12">
-                                                <button class="btn btn-primary rounded-md w-100" id="signin" type="submit">Sign in</button>
+                                                <div class="form-check align-items-center d-flex mb-3">
+                                                    <input class="form-check-input mt-0" type="checkbox" value="" id="AcceptT&C">
+                                                    <label class="form-check-label text-muted ms-2" for="AcceptT&C">I Accept <a href="javascript:void(0)" class="text-primary">Terms And Condition</a></label>
+                                                </div>
                                             </div><!--end col-->
-        
+                            
+                                            <div class="col-lg-12">
+                                                <button class="btn btn-primary rounded-md w-100" type="submit">Register</button>
+                                            </div><!--end col-->
+    
                                             <div class="col-12 text-center mt-4">
-                                                <small><span class="text-muted me-2">Don't have an account ?</span> <a href="signup.html" class="text-dark fw-bold">Sign Up</a></small>
+                                                <small><span class="text-muted me-2">Already have an account ? </span> <a href="signin.html" class="text-dark fw-bold">Sign in</a></small>
                                             </div><!--end col-->
                                         </div><!--end row-->
                                     </form>
@@ -123,7 +128,7 @@
 
                             <!-- Start Footer -->
                             <div class="text-center">
-                                <small class="mb-0 text-light title-dark">© <script>document.write(new Date().getFullYear())</script> Mint Your Ideas. Trade with <i class="mdi mdi-heart text-danger"></i> Us .</small>
+                                <small class="mb-0 text-light title-dark">© <script>document.write(new Date().getFullYear())</script> Mint Your ideas. Trade with <i class="mdi mdi-heart text-danger"></i> Us.</small>
                             </div>
                             <!-- End Footer -->
                         </div>
@@ -136,6 +141,8 @@
         <!-- Style switcher -->
         <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
             <div class="content">
+                
+
                 <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
                 <ul class="text-center list-unstyled mb-0">
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
@@ -158,7 +165,6 @@
         <!-- Main Js -->
         <script src="js/plugins.init.js"></script>
         <script src="js/app.js"></script>
-        <script src="script.js"></script>
         
     </body>
 
