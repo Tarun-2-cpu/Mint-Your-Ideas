@@ -14,11 +14,11 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="../Documentation/images/Mint logo.png">
     <!-- Bootstrap -->
-    <link href="css/tiny-slider.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
     <!-- Choice css -->
     <link rel="stylesheet" href="css/choices.min.css" />
     <!-- Main css -->
@@ -109,7 +109,7 @@
                                         <small class="text-start text-dark d-block fw-bold">Wallet:</small>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <small id="myPublicAddress" class="text-muted">qhut0...hfteh45</small>
-                                            <a href="" class="text-primary"><span class="uil uil-copy"></span></a>
+                                            <a href="javascript:void(0)" class="text-primary"><span class="uil uil-copy"></span></a>
                                         </div>
                                     </div>
                                     
@@ -119,10 +119,10 @@
                                 </div>
                             </div>
                             <div class="mt-2">
-                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="creator-profile.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-user align-middle h6 mb-0 me-1"></i></span> Profile</a>
-                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="creator-profile-edit.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-cog align-middle h6 mb-0 me-1"></i></span> Settings</a>
+                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="javascript:void(0)"><span class="mb-0 d-inline-block me-1"><i class="uil uil-user align-middle h6 mb-0 me-1"></i></span> Profile</a>
+                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="javascript:void(0)"><span class="mb-0 d-inline-block me-1"><i class="uil uil-cog align-middle h6 mb-0 me-1"></i></span> Settings</a>
                                 <div class="dropdown-divider border-top"></div>
-                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="lock-screen.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6 mb-0 me-1"></i></span> Logout</a>
+                                <a class="dropdown-item small fw-semibold text-dark d-flex align-items-center" href="signin.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6 mb-0 me-1"></i></span> Logout</a>
                             </div>
                         </div>
                     </div>
@@ -134,28 +134,19 @@
                 <!-- Navigation Menu-->   
                 <ul class="navigation-menu nav-left nav-light">
                     <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Home</a>
-                        <ul class="submenu megamenu">
-                            <li class="d-none d-lg-block">
-                                <ul>
-                                    <!-- <li><img src="images/character.png" class="img-fluid" alt=""></li> -->
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="index.html">Home</a>
                     </li>
                     
                     <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">About us</a>
+                        <a href="#contact">About us</a>
                     </li>
                     
-                    <li><a href="activity.html" class="sub-menu-item"> How it Works</a></li>
+                    <li><a href="index.html#how-it-works" class="sub-menu-item"> How it Works</a></li>
 
-                    <li><a href="wallet.html" class="sub-menu-item">Browse Ideas</a></li>
+                    <li><a href="index.html#explore" class="sub-menu-item">Browse Ideas</a></li>
 
                     <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Contact Us</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            
+                        <a href="#contact">Contact Us</a>
                     </li>
                     
                 </ul><!--end navigation menu-->
@@ -178,8 +169,8 @@
                 <div class="row justify-content-center my-5">
                     <div class="col-12">
                         <div class="title-heading text-center px-4">
-                            <h4 class="display-6 text-white title-dark fw-medium mb-3">The way to Find <br> any <span class="text-gradient-primary">Digital</span> Content</h4>
-                            <p class="text-white title-dark mb-0">Discover limited-edition digital arts. Create, Sell and Buy now.</p>
+                            <h4 class="display-6 text-white title-dark fw-medium mb-3">Unlock the World of <br> Unique <span class="text-gradient-primary">NFT</span> Creations</h4>
+                            <p class="text-white title-dark mb-0">Explore exclusive digital artworks. Mint, Trade, and Collect today.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -202,25 +193,25 @@
                                                 <div class="col-lg-3 col-md-6">
                                                     <div class="filter-search-form position-relative filter-border">
                                                         <i class="uil uil-search icons"></i>
-                                                        <input name="name" type="text" id="search-keyword" class="form-control filter-input-box bg-light border-0" placeholder="Search your keaywords">
+                                                        <input name="name" type="text" id="search-keyword" class="form-control filter-input-box bg-light border-0" placeholder="Search your keywords">
                                                     </div>
                                                 </div><!--end col-->
 
-                                                <div class="col-lg-3 col-md-6 mt-3 mt-md-0" style = "padding:0 3px;">
+                                                <div class="col-lg-3 col-md-6 mt-3 mt-md-0">
                                                     <div class="filter-search-form position-relative filter-border">
                                                         <i class="uil uil-usd-circle icons"></i>
-                                                        <select class="form-select" data-trigger name="choices-criteria" id="choices-criteria" aria-label="Default select example">
+                                                        <select class="form-select" data-trigger name="choices-criteria" id="choices-criteria" aria-label="Default select example" style="padding-left:40px;">
                                                             <option selected="" value="1">Auction Product</option>
                                                             <option value="2">On Sale</option>
                                                             <option value="3">Offers</option>
                                                         </select>
                                                     </div>
-                                                </div>
+                                                </div><!--end col-->
                                                 
-                                                <div class="col-lg-3 col-md-6 mt-3 mt-lg-0" style= "padding:0 3px;">
+                                                <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
                                                     <div class="filter-search-form position-relative filter-border">
                                                         <i class="uil uil-window icons"></i>
-                                                        <select class="form-select " data-trigger name="choices-type" id="choices-type" aria-label="Default select example">
+                                                        <select class="form-select " data-trigger name="choices-type" id="choices-type" aria-label="Default select example" style="padding-left:40px;">
                                                             <option selected="" value="1">Art</option>
                                                             <option value="2">Games</option>
                                                             <option value="3">Music</option>
@@ -250,13 +241,13 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
@@ -264,8 +255,8 @@
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
 
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/7.gif" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                             <div class="position-absolute top-0 start-0 m-2">
                                 <a href="javascript:void(0)" class="badge badge-link bg-primary">GIFs</a>
                             </div>
@@ -276,7 +267,7 @@
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Deep Sea Phantasy</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
                                 <div class="mt-2 d-flex justify-content-evenly">
@@ -292,28 +283,28 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/1.jpg" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                             <div class="position-absolute top-0 start-0 m-2">
                                 <a href="javascript:void(0)" class="badge badge-link bg-primary">Arts</a>
                             </div>
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">CyberPrimal 042 LAN</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
                                 <div class="mt-2 d-flex justify-content-evenly">
@@ -329,28 +320,28 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/8.gif" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                             <div class="position-absolute top-0 start-0 m-2">
                                 <span class="badge badge-link bg-primary">Games</span>
                             </div>
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Crypto Egg Stamp #5</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
                                 <div class="mt-2 d-flex justify-content-evenly">
@@ -366,13 +357,13 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
@@ -380,7 +371,7 @@
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
                         <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/2.jpg" class="img-fluid" alt=""></a>
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
 
                             <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
                                 <i class="uil uil-clock"></i> <small id="auction-item-2" class="fw-bold"></small>
@@ -388,7 +379,7 @@
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Colorful Abstract Painting</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
 
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
@@ -405,25 +396,25 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/3.jpg" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Liquid Forest Princess</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
 
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
@@ -440,21 +431,21 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/9.gif" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                             <div class="position-absolute top-0 start-0 m-2">
                                 <a href="javascript:void(0)" class="badge badge-link bg-primary">GIFs</a>
                             </div>
@@ -465,7 +456,7 @@
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Spider Eyes Modern Art</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
 
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
@@ -482,25 +473,25 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/4.jpg" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="detail.html"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Synthwave Painting</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
 
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
@@ -517,28 +508,28 @@
                     <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                         <div class="d-flex justify-content-between">
                             <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
+                                <a href="javascript:void(0)" class="user-avatar">
                                     <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
+                                <a href="javascript:void(0)" class="user-avatar ms-n3">
                                     <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
                                 </a>
                             </div>
                             
                             <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
                         </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/10.gif" class="img-fluid" alt=""></a>
+                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                            <a href="javascript:void(0)"><img src="../Documentation/images/Mint logo.png" class="img-fluid" alt=""></a>
                             <div class="position-absolute top-0 start-0 m-2">
                                 <a href="javascript:void(0)" class="badge badge-link bg-primary">GIFs</a>
                             </div>
                         </div>
 
                         <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Contemporary Abstract</a>
+                            <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
 
                             <div class="mt-2">
                                 <small class="rate fw-bold">20.5 ETH</small>
@@ -551,156 +542,13 @@
                     </div>
                 </div><!--end col-->
                 
-                <div class="col">
-                    <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                        <div class="d-flex justify-content-between">
-                            <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
-                                    <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                            </div>
-                            
-                            <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
-                        </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/5.jpg" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Valkyrie Abstract Art</a>
-
-                            <div class="mt-2">
-                                <small class="rate fw-bold">20.5 ETH</small>
-                                <div class="mt-2 d-flex justify-content-evenly">
-                                    <button class="btn"><i class="mdi mdi-shopping" style="margin-right:5px;"></i>Buy</button>
-                                    <button class="btn"><i class="mdi mdi-gavel" style="margin-right:5px;"></i>Bid</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
-                
-                <div class="col">
-                    <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                        <div class="d-flex justify-content-between">
-                            <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
-                                    <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                            </div>
-                            
-                            <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
-                        </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/5.gif" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">The girl with the firefly</a>
-
-                            <div class="mt-2">
-                                <small class="rate fw-bold">20.5 ETH</small>
-                                <div class="mt-2 d-flex justify-content-evenly">
-                                    <button class="btn"><i class="mdi mdi-shopping" style="margin-right:5px;"></i>Buy</button>
-                                    <button class="btn"><i class="mdi mdi-gavel" style="margin-right:5px;"></i>Bid</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col">
-                    <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                        <div class="d-flex justify-content-between">
-                            <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
-                                    <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                            </div>
-                            
-                            <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
-                        </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/items/6.jpg" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Dodo hide the seek</a>
-
-                            <div class="mt-2">
-                                <small class="rate fw-bold">20.5 ETH</small>
-                                <div class="mt-2 d-flex justify-content-evenly">
-                                    <button class="btn"><i class="mdi mdi-shopping" style="margin-right:5px;"></i>Buy</button>
-                                    <button class="btn"><i class="mdi mdi-gavel" style="margin-right:5px;"></i>Bid</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
-                
-                <div class="col">
-                    <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                        <div class="d-flex justify-content-between">
-                            <div class="img-group">
-                                <a href="creator-profile.html" class="user-avatar">
-                                    <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                                <a href="creator-profile.html" class="user-avatar ms-n3">
-                                    <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
-                                </a>
-                            </div>
-                            
-                            <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
-                        </div>
-                        <div class="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a href="item-detail-one.html"><img src="images/gif/6.gif" class="img-fluid" alt=""></a>
-
-                            <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
-                                <i class="uil uil-clock"></i> <small id="auction-item-4" class="fw-bold"></small>
-                            </div>
-                        </div>
-
-                        <div class="card-body content position-relative p-0 mt-3">
-                            <a href="item-detail-one.html" class="title text-dark h6">Pinky Ocean</a>
-
-                            <div class="mt-2">
-                                <small class="rate fw-bold">20.5 ETH</small>
-                                <div class="mt-2 d-flex justify-content-evenly">
-                                    <button class="btn"><i class="mdi mdi-shopping" style="margin-right:5px;"></i>Buy</button>
-                                    <button class="btn"><i class="mdi mdi-gavel" style="margin-right:5px;"></i>Bid</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
 
     <!-- Footer Start -->
-    <footer class="bg-footer">
+    <footer class="bg-footer" id="contact">
         <div class="py-5">
             <div class="container">
                 <div class="row">
@@ -709,19 +557,19 @@
                         <h5 class="text-light fw-normal title-dark">Join Our community</h5>
 
                         <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-facebook-f"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-instagram"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-linkedin"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-twitter"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-skype"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-telegram"></i></a></li>
-                            <li class="list-inline-item lh-1"><a href="" class="rounded"><i
+                            <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i
                                         class="uil uil-whatsapp"></i></a></li>
                         </ul>
                     </div><!--end col-->
@@ -765,15 +613,15 @@
                             <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="footer-head">Community</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                    <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About
                                             Us</a></li>
-                                    <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms &
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms &
                                             Conditions</a></li>
-                                    <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy
                                             Policy</a></li>
-                                    <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>
                                             Login</a></li>
-                                    <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>
                                             Contact</a></li>
                                 </ul>
                             </div><!--end col-->
@@ -1085,9 +933,10 @@
 
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/feather.min.js"></script>
-    <script src="js/tobii.min.js"></script>
     <script src="js/tiny-slider.js "></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/tobii.min.js"></script>
     <!-- Main Js -->
     <script src="js/plugins.init.js"></script>
     <script src="js/app.js"></script>
