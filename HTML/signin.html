@@ -18,7 +18,7 @@
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
         <!-- Main css -->
-        <link href="css/style-dark.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
 
         <style>
@@ -48,39 +48,29 @@
         <!-- Loader -->
 
         <div class="back-to-home">
-            <a href="" class="back-button btn btn-pills btn-sm btn-icon btn-primary"><i data-feather="arrow-left" class="icons"></i></a>
+            <a href="index.html" class="back-button btn btn-pills btn-sm btn-icon btn-primary"><i data-feather="arrow-left" class="icons"></i></a>
         </div>
 
         <!-- Hero Start -->
         <section class="position-relative">
-            <div class="bg-video-wrapper">
-                <iframe width="560" height="300" src="https://www.youtube.com/embed/q-R1kpgBffA?playlist=q-R1kpgBffA&autoplay=1&loop=1&controls=0&showinfo=0&rel=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <!-- <iframe src="https://player.vimeo.com/video/502163294?background=1&autoplay=1&loop=1&byline=0&title=0"></iframe> -->
-                <!--Note: Vimeo Embed Background Video-->
-
-                <!-- <iframe src="https://www.youtube.com/embed/yba7hPeTSjk?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe> -->
-                <!--Note: Youtube Embed Background Video-->
-            </div>
+            
             <div class="bg-overlay bg-linear-gradient-2"></div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 p-0">
-                        <div class="d-flex flex-column min-vh-100 p-4">
-                            <!-- Start Logo -->
-                            <div class="text-center">
-                                <div class="d-flex align-items-center justify-content-center top-logo">
-                                    <img src="../Documentation/images/Mint logo.png" alt="">
-                                    <p>Mint Your Ideas</p>
+                        <div class="d-flex align-items-center justify-content-between min-vh-100 p-4">
+                            
+                            <div class="text-center col-5">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <img src="../Documentation/images/Mint logo.png" alt="" style="width:300px;">
+                                    <p style="font-size:20px; color:white;"><b>Mint Your Ideas</b></p>
                                 </div>
                             </div>
-                            <!-- End Logo -->
-
-                            <!-- Start Content -->
-                            <div class="title-heading text-center my-auto">
+                            <div class="d-flex flex-column align-items-center justify-content-center col-7">
+                                <div class="title-heading text-center my-auto">
                                 <div class="form-signin px-4 py-5 bg-white rounded-md shadow-sm">
                                     <form>
-                                        <h5 class="mb-4">Signin</h5>
+                                        <h4 class="mb-4">Signin</h4>
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-floating mb-2">
@@ -118,14 +108,14 @@
                                         </div><!--end row-->
                                     </form>
                                 </div>
-                            </div>
-                            <!-- End Content -->
+                                </div>
+                                <!-- End Content -->
 
-                            <!-- Start Footer -->
-                            <div class="text-center">
-                                <small class="mb-0 text-light title-dark">© <script>document.write(new Date().getFullYear())</script> Mint Your Ideas. Trade with <i class="mdi mdi-heart text-danger"></i> Us .</small>
-                            </div>
-                            <!-- End Footer -->
+                                <!-- Start Footer -->
+                                <div class="text-center" style="margin-top:20px;">
+                                    <small class="mb-0 text-light title-dark">© <script>document.write(new Date().getFullYear())</script> Mint Your Ideas. Trade with <i class="mdi mdi-heart text-danger"></i> Us .</small>
+                                </div>
+                            </div>    <!-- End Footer -->
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -138,16 +128,12 @@
             <div class="content">
                 <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
                 <ul class="text-center list-unstyled mb-0">
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
                 </ul>
             </div>
             <div class="bottom p-0">
-                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-flex align-items-center justify-content-center"><i class="mdi mdi-cog mdi-24px position-absolute mdi-spin text-primary"></i></a>
+                <a href="javascript:void(0);" class="settings bg-white title-bg-dark shadow d-flex align-items-center justify-content-center"><i class="mdi mdi-cog mdi-24px position-absolute mdi-palette text-primary"></i></a>
             </div>
         </div>
         <!-- end Style switcher -->

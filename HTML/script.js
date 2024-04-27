@@ -46,13 +46,16 @@ document.addEventListener("DOMContentLoaded", function() {
    
 let signin = document.querySelector("#signin");
 
-    signin.addEventListener("click", function(e) {
-        e.preventDefault();
-        let email = document.querySelector('#LoginEmail').value;
-        let password = document.querySelector('#LoginPassword').value;
-        if (email === 'admin@demo.com' && password === 'admin@mintyourideas') {
-            window.location.href = "dashboard.html";
-        } else {
-            alert('Register first');
-        }
-    });
+signin.addEventListener("click", function(e) {
+    e.preventDefault();
+    let email = document.querySelector('#LoginEmail').value;
+    let password = document.querySelector('#LoginPassword').value;
+    if (email === 'admin@demo.com' && password === 'admin@mintyourideas') {
+        window.location.href = "dashboard.html";
+    } else {
+        alert('Register first');
+    }
+});
+
+
+
