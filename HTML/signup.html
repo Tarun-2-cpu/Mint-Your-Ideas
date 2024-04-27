@@ -83,12 +83,12 @@
                                         <form>
                                             <h5 class="mb-4">Register Your Account</h5>
                                             
-                                            <button class="mb-3 btn-outline-secondary rounded-md btn-pills px-3" style="font-size:16px;"> <i class="mdi mdi-wallet" style="margin-right:4px;"></i> Use Wallet</button>
-
+                                            <a id="connectWallet" class="mb-4 btn-outline-secondary rounded-md btn-pills px-3" style="font-size:16px; cursor:pointer;"><i class="mdi mdi-wallet fs-6"></i> Use Wallet</a>
+                                           
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="form-floating mb-4">
-                                                        <p for="RegisterName"class="mb-1" style="text-align:left;">First Name</p>
+                                                        <p for="RegisterName"class="mb-1" style="text-align:left; margin-top:25px;">First Name</p>
                                                         <input type="text" class="form-control" id="RegisterName" placeholder="Harry">
                                                     </div>
                                                 </div><!--end col-->
@@ -153,7 +153,31 @@
             </div>
         </div>
         <!-- end Style switcher -->
+
+        <div class="modal fade" id="modal-metamask" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">                    
+                <div class="modal-content justify-content-center border-0 shadow-md rounded-md position-relative">
+                    <div class="position-absolute top-0 start-100 translate-middle z-index-1">
+                        <button type="button" class="btn btn-icon btn-pills btn-sm btn-light btn-close opacity-10" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-muted"></i></button>
+                    </div>
+
+                    <div class="modal-body p-4 text-center">
+                        <img src="images/wallet/MetaMask_Fox.svg" class="avatar avatar-md-md rounded-circle shadow-sm " alt="">
+
+                        <div class="content mt-4">
+                            <h5 class="text-danger mb-4">Error!</h5>
+
+                            <P class="text-muted">Please Download MetaMask and create your profile and wallet in MetaMask. Please click and check the details,</P>
+
+                            <a href="https://metamask.io/" class="btn btn-link primary text-primary fw-bold" target="_blank">MetaMask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+
+
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/feather.min.js"></script>
@@ -162,5 +186,6 @@
         <script src="js/app.js"></script>
         
     </body>
+
 
 </html>
