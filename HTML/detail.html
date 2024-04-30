@@ -25,7 +25,57 @@
         <style>
             .nft-img{
                 width:215px;
+                margin:0 auto;
             }
+            .nav-link{
+                margin-right:20px;
+            }
+            .nav-tabs{
+                justify-content: center;
+            }
+            #buynow{
+                padding-right:25px;
+                padding-left:25px;
+            }
+            
+            @media (max-width:400px){
+                .bg-home,
+                .bg-half-170,
+                .bg-half-260,
+                .bg-marketing,
+                .swiper-slider-hero,
+                .swiper-container,
+                .swiper-slide {
+                    padding:0;
+                    height:auto;
+                }
+
+                .bg-half-260{
+                    padding:324px 0 300px 0;
+                }
+                .features-absolute{
+                    margin:-200px 0;
+                }
+                .nav-link{
+                    margin-right:0px;
+                    padding:0; 
+                }
+                .nav-link{
+                    font-size:13px;
+                }
+                .nav-tabs{
+                    justify-content: space-evenly;
+                    margin:0 -8px;
+                }
+                .button-links{
+                    font-size:10px;
+                    padding:1px;
+                }
+                #buynow{
+                    padding-right:15px;
+                    padding-left:15px;
+                }
+            }    
         </style>
     </head>
 
@@ -121,7 +171,7 @@
         <!-- Navbar End -->
 
         <!-- Start Home -->
-        <section class="bg-half-260 d-table w-100" style="background: url('../Documentation/images/Mint logo.png') center; background-repeat:no-repeat;">
+        <section class="bg-half-260 d-table w-100 background-img" style="background: url('../Documentation/images/Mint logo.png') center; background-repeat:no-repeat;">
             <!-- <div class="container">
                 <div class="row mt-5">
                     <div class="col py-5 py-sm-0 my-5 my-sm-0">
@@ -165,29 +215,28 @@
                                         </div>
 
                                         <div class="col-12 text-center mt-4 pt-2">
-                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1" data-bs-toggle="modal" data-bs-target="#NftBid"><i class="mdi mdi-gavel fs-5 me-2"></i> Place a Bid</a>
-                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1" data-bs-toggle="modal" data-bs-target="#NftBuynow" style="padding-right:25px; padding-left:25px;"><i class="mdi mdi-cart fs-5 me-2"></i> Buy Now</a>
-                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1" data-bs-toggle="modal"><i class="mdi mdi-heart fs-5 me-2"></i> Add To Watchlist</a>
+                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1 button-links" data-bs-toggle="modal" id="buynow" data-bs-target="#NftBuynow" style="padding-right:25px; padding-left:25px;"><i class="mdi mdi-cart fs-5 me-2"></i> Buy Now</a>
+                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1 button-links" data-bs-toggle="modal" data-bs-target="#NftBid"><i class="mdi mdi-gavel fs-5 me-2"></i> Place a Bid</a>
+                                            <a href="#" class="btn btn-l btn-pills btn-primary m-1 button-links" data-bs-toggle="modal"><i class="mdi mdi-heart fs-5 me-2"></i> Add To Watchlist</a>
                                         </div>
                                     </div>
 
                                     <div class="row mt-5">
                                         <div class="col-12">
-                                            <ul class="nav nav-tabs border-bottom justify-content-center" id="myTab" role="tablist">
+                                            <ul class="nav nav-tabs border-bottom " id="myTab" role="tablist">
                                                 <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detailItem" type="button" role="tab" aria-controls="detailItem" aria-selected="true" style="margin-right:20px;">Details</button>
+                                                    <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detailItem" type="button" role="tab" aria-controls="detailItem" aria-selected="true">Details</button>
                                                 </li>
 
                                                 <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="Owner-tab" data-bs-toggle="tab" data-bs-target="#Owner" type="button" role="tab" aria-controls="Owner" aria-selected="false" style="margin-right:20px;">Evidence of Ownership</button>
-                                                </li>
-                                                
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="bids-tab" data-bs-toggle="tab" data-bs-target="#bids" type="button" role="tab" aria-controls="bids" aria-selected="false" style="margin-right:20px;">Bids</button>
+                                                    <button class="nav-link" id="bids-tab" data-bs-toggle="tab" data-bs-target="#bids" type="button" role="tab" aria-controls="bids" aria-selected="false">Bids</button>
                                                 </li>
                     
                                                 <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false" style="margin-right:20px;">Activity</button>
+                                                    <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="Owner-tab" data-bs-toggle="tab" data-bs-target="#Owner" type="button" role="tab" aria-controls="Owner" aria-selected="false">Ownership Verification</button>
                                                 </li>
                                             </ul>
 

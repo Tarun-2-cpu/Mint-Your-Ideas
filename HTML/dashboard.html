@@ -30,7 +30,6 @@
                 width: 100%;
                 border-collapse: collapse;
             }
-
             .card table th,
             .card table td {
                 padding: 10px;
@@ -38,11 +37,9 @@
                 border-bottom: 1px solid #333;
                 text-align:center;
             }
-
             .card table td {
                 height: 60px;
             }
-
             .card table img {
                 width: 50px;
                 height: auto; 
@@ -63,6 +60,68 @@
             .nft-img{
                 width:150px;
                 margin:0 auto;
+            }
+            .minted-ideas-section{
+                align-items:center;
+            }
+            .explore-unique-ideas{
+                text-align:center;
+            }
+
+            .explore-unique-ideas-section{
+                margin-top:5rem;
+                padding-top:120px;
+            }
+
+            .trending-nft{
+                margin-top:100px;
+            }
+
+            @media (max-width:400px) {
+                .minted-ideas-section{
+                    flex-direction:column;
+                    align-items:flex-start;
+                }
+                .minted-ideas-section button{
+                    margin-left:0;
+                }
+                .explore-unique-ideas{
+                    text-align: left;
+                }
+                .explore-unique-ideas p{
+                    font-size: 14px;
+                }
+                .explore-unique-ideas-section{
+                    margin-top:0;
+                }
+                .sold-idea-card{
+                    margin-top:50px;
+                }
+                table th{
+                    font-size:10px;
+                }
+                .card table th,
+                .card table td{
+                    padding:10px 24px;
+                    font-size:12px;
+                    text-wrap:nowrap;
+                }
+                .card table td {
+                    height: 40px;
+                }
+                .card table img {
+                    width: 50px;
+                }
+                .trending-nft{
+                    margin-top:50px;
+                }
+                .trending-nft h4{
+                    text-align: left;
+                }
+                .trending-nft p{
+                    text-align:left;
+                    margin-top:20px;
+                }
             }
 
         </style>
@@ -242,7 +301,7 @@
                                                     <span class="fs-6 mb-0"><i class="uil uil-chart-bar"></i></span>
                                                     <small class="d-block fw-semibold mb-0 ms-2">Overview</small>
                                                 </div>
-                                                <small class="text-primary felx-grow-1 mx-3"><button class=" btn btn-pills text-danger">Updated</button></small>
+                                                <small class="text-danger text-align-right">Updated</small>
                                             </a>
                                         </li>
                                         <li class="px-0 mt-2">
@@ -290,7 +349,7 @@
                     
                     
                     <div class="col-lg-9 col-md-8 order-1">
-                        <div class="card bg-black rounded-md shadow" style="height:380px; overflow:auto;">
+                        <div class="card bg-black rounded-md shadow sold-idea-card" style="height:380px; overflow:auto;">
                             <table class="text-center">
                                 <tr class="text-muted">
                                     <th>Idea Name</th>
@@ -448,12 +507,12 @@
          </div> -->
         
             
-            <div class="container mt-100">
+            <div class="container trending-nft">
                 <div class="row align-items-end">
                     <div class="col-md-8">
                         <div class="section-title mb-4 pb-2">
                             <h4 class="title mb-2">Trending NFTs</h4>
-                            <p class="text-dark mb-0">Discover the latest digital assets in the world of NFTs.</p>
+                            <p class="text-dark">Discover the latest digital assets in the world of NFTs.</p>
                         </div>
                     </div>
 
@@ -792,13 +851,13 @@
             <!-- Banner -->
 
 
-            <section class="section mt-sm-5" style="margin-top:5rem; padding-top:120px;">
+            <section class="section mt-sm-5 explore-unique-ideas-section">
                 <div class="container">
                     <div class="row">
                         <div class="bg-gradient-primary rounded-md p-md-5 p-4 col-12">
                             <div class="row align-items-center">
                                 <div class="col-md-8">
-                                    <div class="section-title text-center text-md-start ms-xl-5 ms-md-4">
+                                    <div class="section-title text-md-start ms-xl-5 ms-md-4 explore-unique-ideas">
                                         <h4 class="display-6 fw-bold text-white title-dark mb-0">Explore Unique Ideas</h4>
                                         <p class="text-white-50 para-desc mb-0 mt-3">Discover a world of creativity and innovation. Explore unique ideas that could become your next NFT collection.</p>
                                     </div>
@@ -821,7 +880,7 @@
             <section class="section" id="my-ideas">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 d-flex align-items-center justify-content-between" style="margin-bottom:40px;">
+                        <div class="col-md-12 d-flex justify-content-between minted-ideas-section" style="margin-bottom:40px;">
                             <div class="section-title mb-4 pb-2">
                                 <h4 class="title mb-2">Minted Ideas</h4>
                                 <p class=" mb-0">Browse through your own NFT creations.</p>
