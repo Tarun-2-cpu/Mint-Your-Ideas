@@ -11,5 +11,5 @@ app.use(express.static(path.join(__dirname, ".")));
 
 // this will start the server
 app.listen(3000, () =>
-  console.log("Ready to get received on: http://localhost:3000/HTML/index.html")
+  console.log("Ready to get received on: http://localhost:3000/index.html")
 );
